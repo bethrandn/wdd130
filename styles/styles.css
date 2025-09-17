@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto arial sans-serif;
+}
+
 :root {
     --text-align: center;
     --padding: 10px;
@@ -22,27 +33,31 @@ main {
 }
 
 main img {
-    width: 150px;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 130px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 20px gray;
 }
 
 p {
-    padding: 0;
+    margin: 1rem;
 }
 
 aside {
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* */
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
     text-align: var(--text-align);
+    position: relative;
 }
 
+aside h2 {
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+    
 aside img {
     width: 200px;
     height: auto;
@@ -52,4 +67,16 @@ footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: var(--text-align);
+}
+/*Class Collector*/
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+.indent {
+    margin-left: 2rem;
 }
