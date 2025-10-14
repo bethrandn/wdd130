@@ -1,103 +1,90 @@
-<!--My Rafting Website-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> About Noble Rafting</title>
-    <meta name="description" content="Noble Rafting, Creating Lasting memories.">
-    <meta name="author" content="Bethrand Nwankwo">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | Noble Rafting</title>
+    <meta name="description"
+        content="Learn about Noble Rafting — our history, mission, and the unforgettable trips we offer." />
+    <meta name="author" content="Bethrand Nwankwo" />
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
-<body>
+<body class="about-page">
     <header>
         <div class="logo">
-            <img src="images/z_boat.png" alt="Noble Rafting Company Logo" width="200">
+            <a href="index.html"><img src="images/z_boat.png" alt="Noble Rafting logo" width="160"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/hero_image.jpg" alt="Rafting Adventures on the the river">
-            <div class="hero-text">
-                <h1>Noble Rafting - Creating lasting memories</h1>
-                <article>
-                    <img src="images/happy_employee.jpg" alt="A Happy Employee" width="300">
-                    <p>“From the moment we arrived, we felt welcomed and cared for. Noble Rafting turned a simple
-                        rafting
-                        trip into a lifetime
-                        memory.”</p>
-                </article>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero_image.jpg" alt="Group enjoying a rafting trip">
+            <div class="hero-title">
+                <h1>About Noble Rafting</h1>
             </div>
-        </div>
-        <section>
-            <h2>History</h2>
-            <div class="history-grid">
-                <p>Noble Rafting was established to provide safe, professional, and memorable rafting experiences. What
-                    began as a small
-                    initiative driven by passion for adventure has grown into a trusted company recognized for its
-                    commitment to safety,
-                    customer satisfaction, and excellence in guided river tours.
-                </p>
-                <img src="images/rafting59_600.jpg" alt="Rafting History Icon">
-                <p>
-                    Over the years, our team has expanded, welcoming professional guides and outdoor enthusiast who
-                    share our vision. Today, Noble Rafting stands as a symbol of adventure, safety, and unforgetable
-                    experiences.
-                </p>
+            <div class="hero-text">
+                <p>Providing safe and unforgettable river experiences since our founding. We combine expert guides,
+                    modern equipment, and friendly service.</p>
             </div>
         </section>
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/los_dientes.jpg" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/big_mallard.jpg" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/half_day.jpg" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/the_rapids.jpg" alt="The Rapids">
-                    <figcaption>The Rapids</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/sunset_raft.jpg" alt="Sunset Raft Ride">
-                    <figcaption>Sunset Raft Ride</figcaption>
-                </figure>
+
+        <!-- Our Story Section -->
+        <section class="history">
+            <h2>Our Story</h2>
+            <div class="history-grid">
+                <p>Noble Rafting was started by a small group of river-lovers who wanted to share the joy of the river
+                    with others. Over the years, we've grown into a trusted local outfitter focused on safety and guest
+                    experience.</p>
+                <img src="images/history.jpg" alt="Historic rafting image">
+                <p>We continually train our staff and invest in modern safety gear so guests can enjoy the adventure
+                    with confidence.</p>
+            </div>
+        </section>
+
+        <!-- Trip Summaries Section -->
+        <section class="trip-summaries">
+            <h2>Trip Summaries</h2>
+            <div class="trip-summary-grid">
+                <article>
+                    <h3>Half Day Adventure</h3>
+                    <p>2–3 hours on mild to moderate rapids, great for families and beginners. Includes safety briefing
+                        and basic paddling instruction.</p>
+                </article>
+                <article>
+                    <h3>Full Day Expedition</h3>
+                    <p>Full-day route with lunch stop, ideal for nature lovers wanting a longer river experience.</p>
+                </article>
+                <article>
+                    <h3>Sunset Raft</h3>
+                    <p>Evening float with calm stretches and scenic sunset views. Perfect for couples and photography.
+                    </p>
+                </article>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>©2025 Noble Rafting | Designed by Bethrand Nwankwo.</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook_square.svg" alt="Facebook Icon" width="50">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin_square.svg" alt="LinkedIn Icon" width="50">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram_square.svg" alt="Instagram Icon" width="50">
-            </a>
+        <p>©2025 Noble Rafting | Designed by Bethrand Nwankwo</p>
+        <nav class="socialmedia" aria-label="Noble Rafting social links">
+            <a href="https://facebook.com/noblerafting" aria-label="Noble Rafting on Facebook"><img
+                    src="images/facebook_square.svg" alt=""></a>
+            <a href="https://instagram.com/noblerafting" aria-label="Noble Rafting on Instagram"><img
+                    src="images/instagram_square.svg" alt=""></a>
+            <a href="https://linkedin.com/company/noblerafting" aria-label="Noble Rafting on LinkedIn"><img
+                    src="images/linkedin_square.svg" alt=""></a>
         </nav>
     </footer>
-
 </body>
 
 </html>

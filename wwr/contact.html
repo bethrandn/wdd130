@@ -10,52 +10,53 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-
 <body class="contact-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header>
         <div class="logo">
-            <img src="images/z_boat.png" alt="Noble Rafting Company Logo" width="200">
+            <img src="images/z_boat.png" alt="Noble Rafting Company Logo">
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="contact-info">
-            <h1>Contact Noble Rafting</h1>
-            <p>
-                We’d love to hear from you! Whether you have questions about our rafting trips,
+    <main id="main-content">
+        <section class="contact-info" aria-labelledby="contact-heading">
+            <h1 id="contact-heading">Contact Noble Rafting</h1>
+            <p>We’d love to hear from you! Whether you have questions about our rafting trips,
                 safety policies, or booking process, feel free to reach out using the information
-                below or by filling out our contact form.
-            </p>
+                below or by filling out our contact form.</p>
 
             <div class="contact-details">
                 <h2>Our Office</h2>
                 <p><strong>Address:</strong> Abeokuta Ibadan Rd, Obantoko</p>
-                <p><strong>Phone:</strong> +234 913 245 8724</p>
-                <p><strong>Email:</strong> info@noblerafting.com</p>
+                <p><strong>Phone:</strong> <a href="tel:+2349132458724">+234 913 245 8724</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@noblerafting.com">info@noblerafting.com</a></p>
             </div>
         </section>
 
-        <section class="contact-layout">
-            <div class="map">
-                <iframe
+        <section class="contact-layout" aria-label="Contact form and map">
+            <div class="map" aria-hidden="false">
+                <iframe title="Noble Rafting location map"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7917.096974216066!2d3.3983484963601662!3d7.178073589437301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1759803379082!5m2!1sen!2sng"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form>
+            <div class="contact-form" aria-labelledby="send-message">
+                <h2 id="send-message">Send Us a Message</h2>
+
+                <!-- method/action are present so the markup validates — replace action with real endpoint when ready -->
+                <form action="#" method="post" novalidate>
                     <fieldset>
                         <legend>Your Information</legend>
+
                         <label for="name">Full Name:</label>
                         <input type="text" id="name" name="name" required>
 
@@ -95,8 +96,8 @@
             </div>
         </section>
 
-        <section class="employees">
-            <h2>Meet Our Team</h2>
+        <section class="employees" aria-labelledby="team-heading">
+            <h2 id="team-heading">Meet Our Team</h2>
             <div class="employee-gallery">
                 <figure>
                     <img src="images/help_desk_1.jpg" alt="John Smile - Lead Rafting Guide">
@@ -118,13 +119,13 @@
         <p>© 2025 Noble Rafting Adventures | Designed by Bethrand Nwankwo</p>
         <div class="socialmedia">
             <a href="https://facebook.com/noblerafting" aria-label="Visit Noble Rafting on Facebook">
-                <img src="images/facebook_square.svg" alt="Noble Rafting Facebook page icon">
+                <img src="images/facebook_square.svg" alt="Facebook">
             </a>
             <a href="https://instagram.com/noblerafting" aria-label="Follow Noble Rafting on Instagram">
-                <img src="images/instagram_square.svg" alt="Noble Rafting Instagram profile icon">
+                <img src="images/instagram_square.svg" alt="Instagram">
             </a>
             <a href="https://linkedin.com/company/noblerafting" aria-label="Connect with Noble Rafting on LinkedIn">
-                <img src="images/linkedin_square.svg" alt="Noble Rafting LinkedIn company page icon">
+                <img src="images/linkedin_square.svg" alt="LinkedIn">
             </a>
         </div>
     </footer>
