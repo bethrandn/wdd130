@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary-color: #055a05; /* forest green (header, h2 background) */
-  --secondary-color: #f3be92; /* warm sand (hover highlight) */
-  --accent1-color: #034444; /* teal (footer background, text color) */
-  --accent2-color: #ffd700; /* golden yellow (optional accent) */
+  --primary-color: #055a05; 
+  --secondary-color: #f3be92; 
+  --accent1-color: #034444; 
+  --accent2-color: #ffd700; 
   --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -28,7 +28,7 @@ header, main, footer {
 /* HEADER: use CSS Grid for logo + nav side by side */
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* logo (auto) + nav (remaining space) */
+    grid-template-columns: auto 1fr; 
     align-items: center;
     gap: 1rem;
     max-width: 1000px;
@@ -136,7 +136,7 @@ nav a.active:hover {
     justify-content: space-between;
     gap: 1rem;
     margin-top: 1rem;
-    flex-wrap: wrap; /* wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .adventure-gallery figure {
@@ -460,16 +460,15 @@ body.contact-page .employee-gallery figcaption {
 }
 
 .hero-text {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  width: 90%;
-  max-width: 900px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* ensure above the overlay */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
 .hero-text h1 {
@@ -502,6 +501,16 @@ button,
   align-self: center;
 }
 
+.book-trip-btn {
+  display: inline-block;
+  width: auto;          
+  max-width: 250px;     /
+  padding: 0.8rem 1.6rem;
+  text-align: center;
+  white-space: nowrap;  
+}
+
+
 button:hover,
 .book-trip-btn:hover,
 .cta-btn:hover,
@@ -509,15 +518,6 @@ button:hover,
   background-color: var(--secondary-color);
   color: var(--accent1-color);
   transform: translateY(-3px);
-}
-
-.book-trip-btn {
-  display: inline-block;
-  width: auto;       
-  max-width: 250px;     
-  padding: 0.8rem 1.6rem;
-  text-align: center;
-  white-space: nowrap;  
 }
 
 /* NEWSLETTER */
@@ -729,7 +729,7 @@ button:hover,
 
 /* EQUIPMENT & SAFETY SECTION */
 .equipment {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; 
   padding: 2rem 1rem;
   border-radius: 12px;
   margin: 2rem auto;
@@ -773,3 +773,76 @@ button:hover,
   line-height: 1.6;
 }
 
+/* FAQ Section Styling */
+.faqs {
+    background-color: #f0f4f4; /* subtle light teal background for contrast */
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* soft shadow for depth */
+}
+
+.faqs h2 {
+    color: #ffffff; /* white text for high contrast */
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color); /* dark green header background */
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* subtle shadow for header */
+}
+
+.faqs dl {
+    margin: 0;
+}
+
+.faqs dt {
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    background-color: #ffffff; /* white background for question */
+    border-left: 5px solid var(--primary-color); /* accent stripe */
+    border-radius: 6px;
+}
+
+.faqs dd {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e9f0ef; /* subtle light background for answer */
+    border-radius: 6px;
+}
+
+
+/* COLOR CONTRAST FIXES  */
+
+/* General h2 headings on dark green backgrounds */
+h2,
+.equipment h2,
+.featured-trips .trip-card h2,
+body.contact-page .contact-form h2,
+body.contact-page .employees h2 {
+    color: #ffffff; /* White text for high contrast */
+}
+
+/* Paragraphs on light backgrounds */
+p {
+    color: #022f2f; /* Dark text for readability */
+}
+
+/* Form labels and legends */
+body.contact-page label,
+body.contact-page legend {
+    color: #022f2f; /* Dark text for high contrast */
+}
+
+/* Active navigation link on warm sand background */
+nav a.active {
+    color: #022f2f;
+}
+
+/* Footer paragraph */
+footer p {
+    color: #ffffff; /* White for maximum contrast */
+}
