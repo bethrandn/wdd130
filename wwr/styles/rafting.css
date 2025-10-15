@@ -727,6 +727,80 @@ button:hover,
     }
 }
 
+.trip-summary-table {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f8f8f8; /* light subtle background */
+    border-radius: 10px;
+}
+
+.trip-summary-table h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff; /* high contrast */
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.trip-summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-summary-table th,
+.trip-summary-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trip-summary-table th {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.trip-summary-table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.trip-summary-table tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .trip-summary-table table,
+    .trip-summary-table th,
+    .trip-summary-table td {
+        display: block;
+        width: 100%;
+    }
+    .trip-summary-table th {
+        text-align: right;
+        padding-right: 1rem;
+    }
+    .trip-summary-table td {
+        padding-left: 50%;
+        position: relative;
+    }
+    .trip-summary-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 0.75rem;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+.trip-summary-table th {
+    background-color: var(--secondary-color);
+    color: #022f2f; /* dark teal for high contrast */
+    font-weight: bold;
+}
+
+
 /* EQUIPMENT & SAFETY SECTION */
 .equipment {
   background-color: #f5f5f5; 
